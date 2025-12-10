@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "extract": "tsx ../scripts/extract.ts --input ../data/raw --out ../data/papers.json --dry-run",
+    "extract:pdf": "tsx ../scripts/extractPdf.ts --input ../data/raw --out ../data/papers.json --model gpt-4o-mini",
+    "validate:data": "tsx ../scripts/validateData.ts",
+    "sync:data": "tsx ../scripts/syncData.ts",
+    "lint:data": "npm run validate:data && npm run sync:data"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.22",
+    "pdf-parse": "^1.1.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "fuse.js": "^7.1.0",
+    "openai": "^4.104.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-router-dom": "^7.10.1",
+    "undici": "^7.16.0",
+    "zod": "^4.1.13"
+  }
+}

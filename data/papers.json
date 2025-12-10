@@ -1,0 +1,514 @@
+[
+  {
+    "id": "Cai-2012-WebsiteFingerprinting",
+    "title": "Touching from a Distance: Website Fingerprinting Attacks and Defenses",
+    "year": 2012,
+    "venue": "CCS",
+    "authors": [
+      "Xiang Cai",
+      "Xin Cheng Zhang",
+      "Brijesh Joshi",
+      "Rob Johnson"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "anonymity",
+      "traffic analysis"
+    ],
+    "subfields": [
+      "传输层特征",
+      "深度学习"
+    ],
+    "tasks": [
+      "封闭世界分类"
+    ],
+    "features": [
+      "包方向序列"
+    ],
+    "models": [
+      "Hidden Markov Models"
+    ],
+    "datasets": [],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种新的网页指纹攻击方法，能够在多种防御机制下有效识别用户访问的网页。实验表明，该攻击在Tor网络中对100个网页的识别准确率超过80%。",
+    "findings": "该攻击在多种防御机制下均表现出较高的成功率，尤其是在Tor网络中，即使使用随机管道化，成功率仍超过87%。",
+    "limitations": "该方法可能在更复杂的防御机制下表现不佳，且对网络条件变化敏感。",
+    "future_work": "未来工作可以探索更鲁棒的特征提取方法和更高效的模型。",
+    "tags": [
+      "传输层特征",
+      "深度学习"
+    ],
+    "links": {}
+  },
+  {
+    "id": "Sirinam-2018-DeepFingerprinting",
+    "title": "Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning",
+    "year": 2018,
+    "venue": "CCS",
+    "authors": [
+      "Payap Sirinam",
+      "Mohsen Imani",
+      "Marc Juarez",
+      "Matthew Wright"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "deep learning",
+      "Tor",
+      "privacy"
+    ],
+    "subfields": [
+      "深度学习"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "包方向序列"
+    ],
+    "models": [
+      "CNN"
+    ],
+    "datasets": [
+      "自建数据集"
+    ],
+    "metrics": [
+      "Accuracy",
+      "Precision",
+      "Recall"
+    ],
+    "summary": "本文提出了一种新的网站指纹攻击方法，称为深度指纹（DF），利用卷积神经网络（CNN）对抗 Tor 网络中的网站指纹防御措施。实验表明，该方法在无防御的 Tor 流量上达到 98% 的准确率，并且在 WTF-PAD 防御下仍能保持 90% 的准确率。",
+    "findings": "DF 攻击在无防御的 Tor 流量上达到 98% 的准确率，并在 WTF-PAD 防御下保持 90% 的准确率，显著优于现有攻击方法。",
+    "limitations": "攻击在 Walkie-Talkie 防御下的准确率仅为 49.7%，显示出对某些防御措施的有效性有限。",
+    "future_work": "探索新的攻击和防御方向，以提高对抗 Walkie-Talkie 等防御措施的有效性。",
+    "tags": [
+      "深度学习",
+      "Tor",
+      "攻击"
+    ],
+    "links": {
+      "pdf": "https://doi.org/10.1145/3243734.3243768"
+    }
+  },
+  {
+    "id": "Bahramali-2024-NetworkAugmentation",
+    "title": "Realistic Website Fingerprinting By Augmenting Network Traces",
+    "year": 2024,
+    "venue": "CCS",
+    "authors": [
+      "Alireza Bahramali",
+      "Ardavan Bozorgi",
+      "Amir Houmansadr"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "traffic analysis",
+      "Tor",
+      "network augmentation"
+    ],
+    "subfields": [
+      "数据增强",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测",
+      "小样本"
+    ],
+    "features": [
+      "包方向序列"
+    ],
+    "models": [
+      "CNN",
+      "Self-supervised learning",
+      "Semi-supervised learning"
+    ],
+    "datasets": [],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种名为NetAugment的网络流量增强技术，通过半监督和自监督学习提高网站指纹攻击的性能。实验表明，该方法在不同网络条件下的攻击准确率优于现有技术。",
+    "findings": "NetAugment在未观察到的网络条件下显著提高了WF攻击的准确性，尤其是在小样本情况下。",
+    "limitations": "需要进一步研究以应对概念漂移和多样化的网络条件。",
+    "future_work": "探索其他类型的网络流量分析中的数据增强应用。",
+    "tags": [
+      "数据增强",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "links": {
+      "pdf": "https://doi.org/10.1145/3576915.3616639"
+    }
+  },
+  {
+    "id": "Jin-2024-Transformer",
+    "title": "Transformer-based Model for Multi-tab Website Fingerprinting Attack",
+    "year": 2024,
+    "venue": "CCS",
+    "authors": [
+      "Zhaoxin Jin",
+      "Tianbo Lu",
+      "Shuang Luo",
+      "Jiaze Shang"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "multi-tab",
+      "Transformer"
+    ],
+    "subfields": [
+      "多标签",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "tasks": [
+      "开放世界检测",
+      "多标签"
+    ],
+    "features": [
+      "包方向序列"
+    ],
+    "models": [
+      "Transformer",
+      "CNN"
+    ],
+    "datasets": [
+      "自建多标签数据集"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种基于Transformer的多标签网站指纹攻击模型TMWF，能够在多标签浏览行为下识别网站。通过引入新的训练方法，模型可以在无需先验知识的情况下识别多标签轨迹中的各个网页。",
+    "findings": "实验结果表明，TMWF在多标签网站指纹攻击中表现优于现有模型。",
+    "limitations": "模型在真实世界中的泛化能力仍需进一步验证。",
+    "future_work": "探索在更多样化的网络环境下提升模型的鲁棒性。",
+    "tags": [
+      "多标签",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "links": {
+      "pdf": "https://doi.org/10.1145/3576915.3623107",
+      "code": "https://github.com/jzx-bupt/TMWF",
+      "dataset": "https://github.com/jzx-bupt/TMWF"
+    }
+  },
+  {
+    "id": "Juarez-2024-Defense",
+    "title": "Toward an Efficient Website Fingerprinting Defense",
+    "year": 2024,
+    "venue": "ESORICS",
+    "authors": [
+      "Marc Juarez",
+      "Mohsen Imani",
+      "Mike Perry",
+      "Claudia Diaz",
+      "Matthew Wright"
+    ],
+    "paper_type": "防御",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "privacy",
+      "anonymous communications"
+    ],
+    "subfields": [
+      "传输层特征",
+      "细粒度网站指纹"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "突发序列"
+    ],
+    "models": [],
+    "datasets": [],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种基于自适应填充的新型轻量级防御方法，旨在在现实评估条件下提供足够的安全性。该方法在封闭世界中将攻击准确率从91%降低到20%，并在开放世界中将攻击精度降至1%。",
+    "findings": "在封闭世界中，防御将攻击准确率从91%降低到20%；在开放世界中，攻击精度降至1%。",
+    "limitations": "尚未在所有可能的真实世界场景中进行全面测试。",
+    "future_work": "进一步优化防御策略以适应更多真实世界场景。",
+    "tags": [
+      "细粒度网站指纹"
+    ],
+    "links": {}
+  },
+  {
+    "id": "Panchenko-2016-WebsiteFingerprinting",
+    "title": "Website Fingerprinting at Internet Scale",
+    "year": 2016,
+    "venue": "NDSS",
+    "authors": [
+      "Andriy Panchenko",
+      "Fabian Lanze",
+      "Andreas Zinnen",
+      "Martin Henze",
+      "Jan Pennekamp",
+      "Klaus Wehrle",
+      "Thomas Engel"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "traffic analysis",
+      "anonymization networks"
+    ],
+    "subfields": [
+      "传输层特征",
+      "鲁棒性"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "包方向序列",
+      "突发序列"
+    ],
+    "models": [
+      "SVM"
+    ],
+    "datasets": [
+      "自建数据集（300,000+网页）"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种新的网站指纹攻击方法，通过从网络流量中提取特征来识别加密和匿名连接的内容。该方法在分类准确性上优于现有方法，并且计算效率更高。研究还构建了一个包含超过30万网页的代表性数据集，用于评估攻击的实际严重性。",
+    "findings": "在现实条件下，网页指纹识别几乎不可能成功，但网站指纹识别在某些情况下可能成功。",
+    "limitations": "在大规模互联网环境中，网页指纹识别难以实现。",
+    "future_work": "研究如何在更大规模和更复杂的网络环境中提高攻击的有效性。",
+    "tags": [
+      "传输层特征",
+      "鲁棒性"
+    ],
+    "links": {
+      "pdf": "http://dx.doi.org/10.14722/ndss.2016.23477"
+    }
+  },
+  {
+    "id": "Deng-2024-MultiTabWF",
+    "title": "Robust Multi-tab Website Fingerprinting Attacks in the Wild",
+    "year": 2024,
+    "venue": "IEEE Symposium on Security and Privacy",
+    "authors": [
+      "Xinhao Deng",
+      "Qilei Yin",
+      "Zhuotao Liu",
+      "Xiyuan Zhao",
+      "Qi Li",
+      "Mingwei Xu",
+      "Ke Xu",
+      "Jianping Wu"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "multi-tab",
+      "transformer",
+      "adversarial"
+    ],
+    "subfields": [
+      "多标签",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "tasks": [
+      "开放世界检测",
+      "多标签"
+    ],
+    "features": [
+      "包方向序列",
+      "时延"
+    ],
+    "models": [
+      "Transformer"
+    ],
+    "datasets": [
+      "Multi-tab WF dataset"
+    ],
+    "metrics": [
+      "F1"
+    ],
+    "summary": "本文提出了ARES，一种新型的多标签网站指纹攻击框架，专为多标签浏览环境设计。通过将多标签攻击视为多标签分类问题，ARES利用多个分类器和新型Transformer模型Trans-WF来识别特定网站。",
+    "findings": "ARES在多标签网站指纹攻击中实现了最佳F1分数0.907，并在多种WF防御机制下保持鲁棒性。",
+    "limitations": "需要大量的训练数据，且在标签数量动态变化时性能可能下降。",
+    "future_work": "探索更高效的模型以减少对训练数据的依赖，并提高对未知标签数量的适应性。",
+    "tags": [
+      "多标签",
+      "深度学习",
+      "细粒度网站指纹"
+    ],
+    "links": {
+      "dataset": "https://github.com/Xinhao-Deng/Multi-tab-WF-Attack-datasets"
+    }
+  },
+  {
+    "id": "Hayes-2016-kfingerprinting",
+    "title": "k-fingerprinting: A Robust Scalable Website Fingerprinting Technique",
+    "year": 2016,
+    "venue": "USENIX Security Symposium",
+    "authors": [
+      "Jamie Hayes",
+      "George Danezis"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "k-fingerprinting",
+      "random decision forests"
+    ],
+    "subfields": [
+      "深度学习",
+      "传输层特征"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "包方向序列",
+      "突发序列"
+    ],
+    "models": [
+      "随机森林"
+    ],
+    "datasets": [
+      "DS_Tor",
+      "DS_Norm"
+    ],
+    "metrics": [
+      "True Positive Rate",
+      "False Positive Rate",
+      "Bayesian Detection Rate"
+    ],
+    "summary": "本文提出了一种新的网站指纹攻击技术，称为k-fingerprinting，基于随机决策森林。该方法在Tor隐藏服务上进行评估，显示出比现有技术更高的准确性和速度，即使在面对大量噪声数据时也能有效攻击。",
+    "findings": "k-fingerprinting在监控的30个隐藏服务中，TPR达到85%，FPR低至0.02%，在10万个未监控页面的世界中表现出色。",
+    "limitations": "需要大量的训练数据，且在某些特定的网络资源上错误率较高。",
+    "future_work": "优化特征选择以提高鲁棒性，减少训练数据需求。",
+    "tags": [
+      "深度学习",
+      "传输层特征"
+    ],
+    "links": {
+      "pdf": "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/hayes"
+    }
+  },
+  {
+    "id": "Cherubin-2022-OnlineWF",
+    "title": "Online Website Fingerprinting: Evaluating Website Fingerprinting Attacks on Tor in the Real World",
+    "year": 2022,
+    "venue": "USENIX Security Symposium",
+    "authors": [
+      "Giovanni Cherubin",
+      "Rob Jansen",
+      "Carmela Troncoso"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "Tor",
+      "real world evaluation"
+    ],
+    "subfields": [
+      "细粒度网站指纹"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "包方向序列"
+    ],
+    "models": [
+      "机器学习分类模型"
+    ],
+    "datasets": [],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文首次在真实世界中评估了针对 Tor 用户的网站指纹攻击。通过在 Tor 退出中继上收集真实流量数据，研究者能够在开放世界中训练和评估攻击模型，发现攻击在监控少量网站时准确率可达 95%，但随着监控网站数量增加，准确率显著下降。",
+    "findings": "攻击在监控 5 个流行网站时准确率超过 95%，但在监控 25 个网站时降至 80% 以下。",
+    "limitations": "攻击在监控大量网站时效果不佳，且依赖于特定的流量收集位置。",
+    "future_work": "探索更广泛的流量收集方法和更鲁棒的模型，以提高攻击在大规模监控中的有效性。",
+    "tags": [
+      "细粒度网站指纹"
+    ],
+    "links": {
+      "pdf": "https://www.usenix.org/conference/usenixsecurity22/presentation/cherubin"
+    }
+  },
+  {
+    "id": "Shen-2023-RobustFingerprinting",
+    "title": "Subverting Website Fingerprinting Defenses with Robust Traffic Representation",
+    "year": 2023,
+    "venue": "USENIX Security Symposium",
+    "authors": [
+      "Meng Shen",
+      "Kexin Ji",
+      "Zhenbo Gao",
+      "Qi Li",
+      "Liehuang Zhu",
+      "Ke Xu"
+    ],
+    "paper_type": "攻击",
+    "threat_model": "Tor",
+    "keywords": [
+      "website fingerprinting",
+      "robust traffic representation",
+      "deep learning"
+    ],
+    "subfields": [
+      "深度学习",
+      "传输层特征"
+    ],
+    "tasks": [
+      "封闭世界分类",
+      "开放世界检测"
+    ],
+    "features": [
+      "包方向序列",
+      "时延"
+    ],
+    "models": [
+      "CNN"
+    ],
+    "datasets": [
+      "public real-world datasets"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "summary": "本文提出了一种新的网站指纹攻击方法，称为鲁棒指纹（RF），通过生成流量聚合矩阵（TAM）来捕获Tor流量中的关键特征，并使用CNN分类器进行攻击。实验表明，RF在多种防御下的攻击准确率显著优于现有方法。",
+    "findings": "RF在现有防御下的平均准确率提高了8.9%，在封闭和开放世界场景中均表现出色。",
+    "limitations": "需要假设攻击者已知目标防御策略。",
+    "future_work": "开发更通用的攻击方法，适用于未知防御策略。",
+    "tags": [
+      "鲁棒性",
+      "深度学习"
+    ],
+    "links": {
+      "pdf": "https://www.usenix.org/conference/usenixsecurity23/presentation/shen-meng"
+    }
+  }
+]
